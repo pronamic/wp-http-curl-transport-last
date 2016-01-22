@@ -21,8 +21,8 @@ GitHub URI: https://github.com/pronamic/wp-http-curl-transport-last
 function http_curl_transport_last( $request_order ) {
 	$i = array_search( 'curl', $request_order );
 
-	if ( $i !== false ) {
-		unset( $request_order[$i] );
+	if ( false !== $i ) {
+		unset( $request_order[ $i ] );
 
 		$request_order[] = 'curl';
 	}

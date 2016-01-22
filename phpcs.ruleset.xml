@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<ruleset name="HTTP cURL transport last plugin rules">
+	<rule ref="WordPress">
+		<exclude name="Squiz.Commenting" />
+	</rule>
+</ruleset>
